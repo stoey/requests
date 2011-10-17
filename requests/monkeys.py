@@ -11,7 +11,7 @@ import urllib2
 import re
 
 import sys
-if sys.version_info[:2] < (2,6):
+if sys.version_info[:3] < (2,5,4):
     import httplib
     def build_opener(*handlers):
         """Create an opener object from a list of handlers.
